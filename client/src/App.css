@@ -1,0 +1,169 @@
+body {
+  background-image: url(img/633270.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(img/633270.png);
+  }
+}
+.wrapper {
+  max-width: 940px;
+  margin: 0 20px;
+  display: grid;
+}
+
+@media screen and (min-width: 500px) {
+  .img-content {
+    color: white;
+    float: left;
+    width: 50%;
+  }
+
+  .content {
+    color: white;
+    float: right;
+    width: 50%;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    grid-template-columns: 3fr 3fr;
+  }
+
+  .header {
+    text-align: center;
+    grid-column: 1 / -1;
+    clear: both;
+  }
+}
+
+@supports (display: grid) {
+  .wrapper > * {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.img-character {
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+.content-text {
+  color: white;
+  font-size: 24px;
+}
+
+.tries-text {
+  color: white;
+  padding-top: 10px;
+  font-size: 23px;
+}
+
+.used-letters {
+  color: white;
+  font-size: 18px;
+}
+
+.hidden-text {
+  color: white;
+  font-size: 35px;
+}
+
+.welcome {
+  color: white;
+  font-size: 35px;
+}
+
+.instructions {
+  color: white;
+  font-size: 23px;
+}
+
+.species {
+  color: white;
+  font-size: 20px;
+}
+
+.winner-loser {
+  font-family: Misfits;
+  color: #97ce4c;
+  text-align: center;
+  font-size: 45px;
+}
+.header-title {
+  color: #97ce4c;
+  font-family: Misfits;
+  font-size: 50px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Misfits";
+  src: url("fonts/Misfits.woff2") format("woff2"),
+    url("fonts/Misfits.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.btn-start {
+  text-align: right;
+  margin-top: 50px;
+}
+
+.startButton {
+  -moz-box-shadow: 0px 9px 15px -7px #3e7327;
+  -webkit-box-shadow: 0px 9px 15px -7px #3e7327;
+  box-shadow: 0px 9px 15px -7px #3e7327;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #77b55a),
+    color-stop(1, #72b352)
+  );
+  background: -moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+  background: -webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+  background: -o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+  background: -ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+  background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
+  background-color: #77b55a;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #4b8f29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Misfits;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 36px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #5b8a3c;
+}
+.startButton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #72b352),
+    color-stop(1, #77b55a)
+  );
+  background: -moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+  background: -webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+  background: -o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+  background: -ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+  background: linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
+  background-color: #72b352;
+}
+.startButton:active {
+  position: relative;
+  top: 1px;
+}
